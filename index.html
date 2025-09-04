@@ -27,8 +27,31 @@
     <main>
       <h1>LISTA DE TAREFAS</h1>
       <section class="to-do-list-container">
-        <div class="btn-container">
-          <button id="addBtn" onclick="addList()">ADICIONAR LISTA</button>
+        <div class="inputs-container">
+          <label for="toDoInput">Adicione o nome da tarefa:</label
+          ><input type="text" name="do-name" id="toDoInput" />
+          <button id="addBtn" onclick="addTask()">ADICIONAR TAREFA</button>
+        </div>
+        <div id="result"></div>
+        <div class="task-container">
+          <div class="task">
+            <p>Progamar em javascript</p>
+            <button id="removeBtn" onclick="removeTask()">
+              <img
+                src="src/assets/img/x-circle.svg"
+                alt="Botão de remover tarefa"
+              />
+            </button>
+          </div>
+          <div class="task">
+            <p>Progamar em javascript</p>
+            <button id="removeBtn" onclick="removeTask()">
+              <img
+                src="src/assets/img/x-circle.svg"
+                alt="Botão de remover tarefa"
+              />
+            </button>
+          </div>
         </div>
       </section>
     </main>

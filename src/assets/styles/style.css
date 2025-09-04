@@ -22,7 +22,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 12rem;
+  padding-top: 10rem;
 }
 
 main > h1 {
@@ -31,13 +31,36 @@ main > h1 {
   color: #fff;
 }
 
+.inputs-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+#result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+#result > p {
+  padding: 1rem 0 2rem;
+}
+
 .to-do-list-container {
-  height: 450px;
+  height: auto;
   background: #c0baba;
   border-radius: 16px;
-  width: 40%;
+  width: auto;
   box-shadow: 2px 2px 6px #00000077;
   padding: 0.5rem;
+}
+
+label {
+  font-size: 14px;
+  width: auto;
+  margin-right: 1rem;
 }
 
 #addBtn {
@@ -61,14 +84,109 @@ main > h1 {
   opacity: 0.7;
 }
 
+#toDoInput {
+  text-align: center;
+  font-size: 18px;
+  border-radius: 22px;
+  border: 1px solid #000000;
+  background: transparent;
+  padding: 0.45rem 0;
+  transition: all 0.2s ease;
+}
+
+#toDoInput:focus {
+  background: #ffffffa1;
+  outline: none;
+  border: 1px solid #3687ff;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #880988;
+  height: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 18px 18px 2px 18px;
+  box-shadow: 4px 4px 10px #000000;
+  margin-bottom: 1rem;
+}
+
+.task > p {
+  margin-left: 1rem;
+}
+
+.task > button {
+  margin-right: 1rem;
+}
+
+#removeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+#removeBtn > img {
+  width: 30px;
+  height: 30px;
+}
+
+#removeBtn:hover {
+  transform: scale(1.05);
+  filter: invert(1);
+}
+
+#removeBtn:active {
+  transform: scale(0.85);
+  opacity: 0.7;
+}
+
 @media (min-width: 280px) and (max-width: 350px) {
   .to-do-list-container {
     width: 85%;
+  }
+  #addBtn {
+    padding: 0.5rem;
+    margin: 0;
+    width: 120px;
+    margin-top: 0.5rem;
+  }
+
+  .inputs-container {
+    flex-direction: column;
   }
 }
 
 @media (min-width: 350px) and (max-width: 650px) {
   .to-do-list-container {
     width: 70%;
+  }
+  #addBtn {
+    padding: 0.5rem;
+    margin: 0;
+    width: 120px;
+    margin-top: 0.5rem;
+  }
+
+  .inputs-container {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+  .to-do-list-container {
+    width: 75%;
+  }
+  #addBtn {
+    padding: 0.5rem;
   }
 }
