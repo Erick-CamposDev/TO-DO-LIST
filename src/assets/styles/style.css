@@ -105,6 +105,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
 }
 
 .task {
@@ -147,6 +148,37 @@ label {
 }
 
 .removeBtn:active {
+  transform: scale(0.85);
+  opacity: 0.7;
+}
+
+.remove-all-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-all-btn {
+  width: 150px;
+  height: 65px;
+  padding: 0.65rem;
+  border: 1px solid #000;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 18px;
+  font-weight: 600;
+  box-shadow: 3px 3px 10px #0000009c;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.remove-all-btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.remove-all-btn:active {
   transform: scale(0.85);
   opacity: 0.7;
 }
