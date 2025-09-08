@@ -29,7 +29,12 @@
       <section class="to-do-list-container">
         <div class="inputs-container">
           <label for="toDoInput">Adicione o nome da tarefa:</label
-          ><input type="text" name="do-name" id="toDoInput" />
+          ><input
+            type="text"
+            name="do-name"
+            id="toDoInput"
+            autocomplete="off"
+          />
           <button id="addBtn" onclick="addTask()">ADICIONAR TAREFA</button>
         </div>
         <div id="result"></div>
