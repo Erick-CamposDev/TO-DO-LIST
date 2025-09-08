@@ -213,6 +213,7 @@ label {
 @media (min-width: 350px) and (max-width: 650px) {
   .to-do-list-container {
     width: 80%;
+    padding: 0.5rem 2rem;
   }
   #addBtn {
     padding: 0.5rem;
