@@ -221,6 +221,10 @@ label {
     margin-top: 0.5rem;
   }
 
+  .inputs-container > input {
+    width: auto;
+  }
+
   .inputs-container {
     flex-direction: column;
   }
