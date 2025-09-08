@@ -64,3 +64,9 @@ function removeTask(task, button) {
   result.innerHTML = "<p>Tarefa Removida!</p>";
   result.style.color = "#ff0000";
 }
+
+taskName.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    addTask();
+  }
+});
