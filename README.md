@@ -57,4 +57,4 @@ O design foi pensado em **Mobile First**, garantindo que a aplicação seja **to
 
 ## Deploy 📎
 
-![Link do Projeto][https://erick-camposdev.github.io/TO-DO-LIST/]
+[Link do Projeto](https://erick-camposdev.github.io/TO-DO-LIST/)
