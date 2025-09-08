@@ -223,7 +223,7 @@ label {
   }
 
   .inputs-container > input {
-    width: auto;
+    width: 75%;
   }
 
   .inputs-container {
