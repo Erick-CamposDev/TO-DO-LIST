@@ -192,9 +192,8 @@ label {
 footer {
   display: flex;
   width: 100%;
-  background: #ac44ac;
   height: 30vh;
-  margin-top: 10rem;
+  margin-top: 1rem;
   align-items: center;
   justify-content: center;
   font-style: italic;
