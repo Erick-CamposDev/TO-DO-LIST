@@ -50,6 +50,13 @@ O design foi pensado em **Mobile First**, garantindo que a aplicação seja **to
 
 ---
 
+## ✨Nova Feature
+
+- Adicionado novos botões de editar e concluir tarefa!
+- Sinta-se livre para pode finalizar uma tarefa e edita-lá quando quiser!
+
+---
+
 ## 📸 Demonstração
 
 ![To-do-list-sem-tarefas](src/assets/img/To%20do%20List%20normal.jpg)
