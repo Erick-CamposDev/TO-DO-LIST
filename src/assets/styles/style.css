@@ -170,6 +170,7 @@ label {
   border-radius: 18px 18px 2px 18px;
   box-shadow: 4px 4px 10px #000000;
   margin-bottom: 1rem;
+  overflow: hidden;
 }
 
 .task > p {
@@ -286,6 +287,17 @@ footer {
   #editContainer {
     flex-direction: column;
   }
+
+  .removeBtn > img,
+  .doneBtn > img,
+  .editTaskBtn > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btns {
+    gap: 0.5rem;
+  }
 }
 
 @media (min-width: 350px) and (max-width: 650px) {
@@ -310,6 +322,17 @@ footer {
 
   #editContainer {
     flex-direction: column;
+  }
+
+  .removeBtn > img,
+  .doneBtn > img,
+  .editTaskBtn > img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btns {
+    gap: 0.5rem;
   }
 }
 

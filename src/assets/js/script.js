@@ -88,6 +88,10 @@ function addTask() {
     taskList.innerHTML = "";
     removeAllBtn.remove();
 
+    if (editContainer) {
+      editContainer.style.display = "none";
+    }
+
     result.innerHTML = "<p>Você removeu todas as tarefas!</p>";
     result.style.color = "#ff0000";
   });
@@ -159,7 +163,7 @@ function removeTask(task, button) {
     button.remove();
 
     if (editContainer) {
-      editContainer.remove();
+      editContainer.style.display = "none";
     }
   }
 
