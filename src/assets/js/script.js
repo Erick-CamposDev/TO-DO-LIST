@@ -139,7 +139,7 @@ function editTask(task) {
 
   const btns = task.querySelector(".btns");
 
-  task.innerHTML = `<p>${editInput.value}`;
+  task.innerHTML = `<p>${editInput.value}</p>`;
 
   if (!task.contains(btns)) {
     task.appendChild(btns);
@@ -157,6 +157,10 @@ function removeTask(task, button) {
 
   if (tasks.length === 0) {
     button.remove();
+
+    if (editContainer) {
+      editContainer.remove();
+    }
   }
 
   result.innerHTML = "<p>Tarefa Removida!</p>";
