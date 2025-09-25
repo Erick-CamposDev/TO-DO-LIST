@@ -298,6 +298,10 @@ footer {
   .btns {
     gap: 0.5rem;
   }
+
+  footer > p {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 350px) and (max-width: 650px) {
@@ -324,6 +328,10 @@ footer {
     flex-direction: column;
   }
 
+  #editInput {
+    width: 80%;
+  }
+
   .removeBtn > img,
   .doneBtn > img,
   .editTaskBtn > img {
@@ -333,6 +341,10 @@ footer {
 
   .btns {
     gap: 0.5rem;
+  }
+
+  footer > p {
+    font-size: 14px;
   }
 }
 
